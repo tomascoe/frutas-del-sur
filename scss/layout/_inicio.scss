@@ -1,3 +1,8 @@
+.section__title {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
 // NAVBAR
 header {
   .navbar {
@@ -77,7 +82,7 @@ header {
   .banner__fade {
     width: 100%;
     height: 100%;
-    background: rgba($color: #000000, $alpha: 0.7);
+    background: rgba($color: #000000, $alpha: 0.6);
     color: white;
     display: flex;
     flex-direction: column;
@@ -99,9 +104,59 @@ header {
     background-image: url(../../assets/banner/banner-xl.jpg);
   }
 }
+// SERVICES
+.services {
+  .container {
+    margin-top: 3rem;
+    .bubble {
+      .bubble__icon {
+        background: rgb(160, 160, 160);
+        height: 125px;
+        width: 125px;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bubble__content {
+        text-align: center;
+        max-width: 20rem;
+        margin: auto;
+        h4 {
+          text-transform: uppercase;
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .bubble {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 3rem;
+      }
+      .bubble-left {
+        .bubble__icon {
+          grid-column: 2;
+        }
+        .bubble__content {
+          grid-row: 1;
+          grid-column: 1;
+        }
+      }
+      .bubble-right {
+        .bubble__icon {
+          order: 2;
+        }
+        .bubble__content {
+          order: 3;
+        }
+      }
+    }
+  }
+}
 // FOOTER
 footer {
-  height: 5rem;
+  height: 4rem;
   background: #333;
   display: flex;
   align-items: center;
