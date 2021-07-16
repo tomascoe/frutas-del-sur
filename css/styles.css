@@ -84,8 +84,57 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   text-align: center;
 }
 
+.banner {
+  height: 85vh;
+  width: 100vw;
+  background-image: url(../../assets/banner/banner-xs.png);
+  background-size: cover;
+}
+
+.banner .banner__fade {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .banner__fade .banner__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.banner .banner__fade .banner__subtitle {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .banner {
+    background-image: url(../../assets/banner/banner-md.png);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    background-image: url(../../assets/banner/banner-xl.jpg);
+  }
+}
+
 footer {
-  height: 10vh;
+  height: 5rem;
   background: #333;
   display: -webkit-box;
   display: -ms-flexbox;
