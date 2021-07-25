@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .section__title {
   font-size: 2em;
   text-transform: uppercase;
@@ -92,7 +96,7 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
 
 .banner {
   height: 85vh;
-  width: 100vw;
+  width: 100%;
   background-image: url(../../assets/banner/banner-xs.png);
   background-size: cover;
 }
@@ -139,14 +143,16 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   }
 }
 
-.services .container {
+.services .wrapper {
+  width: 70%;
+  margin: auto;
   margin-top: 3rem;
 }
 
-.services .container .bubble .bubble__icon {
+.services .wrapper .bubble .bubble__icon {
   background: #a0a0a0;
-  height: 125px;
-  width: 125px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   margin: auto;
   display: -webkit-box;
@@ -160,44 +166,100 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
           justify-content: center;
 }
 
-.services .container .bubble .bubble__content {
+.services .wrapper .bubble .bubble__content {
   text-align: center;
   max-width: 20rem;
   margin: auto;
 }
 
-.services .container .bubble .bubble__content h4 {
+.services .wrapper .bubble .bubble__content h4 {
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
-  .services .container .bubble {
+  .services .wrapper .bubble {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     margin-bottom: 3rem;
   }
-  .services .container .bubble-left .bubble__icon {
+  .services .wrapper .bubble-left .bubble__icon {
     -ms-grid-column: 2;
     grid-column: 2;
   }
-  .services .container .bubble-left .bubble__content {
+  .services .wrapper .bubble-left .bubble__content {
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .services .container .bubble-right .bubble__icon {
+  .services .wrapper .bubble-right .bubble__icon {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .services .container .bubble-right .bubble__content {
+  .services .wrapper .bubble-right .bubble__content {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
+}
+
+.prod {
+  display: block;
+}
+
+.prod .wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+.prod .wrapper .card {
+  position: relative;
+  border: none;
+}
+
+.prod .wrapper .card .card__img {
+  margin: auto;
+  display: block;
+  height: auto;
+}
+
+.prod .wrapper .card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.prod .wrapper .card .overlay .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.prod .wrapper .card .card__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.prod .wrapper .card:hover .card__img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.prod .wrapper .card:hover .overlay {
+  opacity: 1;
 }
 
 footer {
