@@ -97,7 +97,7 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
 .banner {
   height: 85vh;
   width: 100%;
-  background-image: url(../../assets/banner/banner-xs.png);
+  background-image: url(../assets/banner/banner-xs.png);
   background-size: cover;
 }
 
@@ -224,6 +224,7 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   margin: auto;
   display: block;
   height: auto;
+  width: 90%;
 }
 
 .prod .wrapper .card .overlay {

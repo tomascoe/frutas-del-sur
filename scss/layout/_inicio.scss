@@ -80,7 +80,7 @@ header {
 .banner {
   height: 85vh;
   width: 100%;
-  background-image: url(../../assets/banner/banner-xs.png);
+  background-image: url(../assets/banner/banner-xs.png);
   background-size: cover;
   .banner__fade {
     width: 100%;
@@ -172,6 +172,7 @@ header {
         margin: auto;
         display: block;
         height: auto;
+        width: 90%;
       }
       .overlay {
         position: absolute;
