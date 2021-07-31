@@ -388,6 +388,7 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
 .prod .wrapper .card {
   position: relative;
   border: none;
+  background: #f2f2f2;
 }
 
 .prod .wrapper .card .card__img {
