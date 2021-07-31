@@ -263,6 +263,86 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   opacity: 1;
 }
 
+.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .container .form-wrap form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .container .form-wrap form .form-group {
+  width: 90%;
+}
+
+.contact .container .form-wrap form .form-group input:focus {
+  outline: #333;
+  border: #333;
+  -webkit-box-shadow: 0 0 2px #333;
+          box-shadow: 0 0 2px #333;
+}
+
+.contact .container .form-wrap form .form-group textarea {
+  resize: none;
+}
+
+.contact .container .form-wrap form .form-group textarea:focus {
+  outline: #333;
+  border: #333;
+  -webkit-box-shadow: 0 0 2px #333;
+          box-shadow: 0 0 2px #333;
+}
+
+.contact .container .form-wrap form button {
+  border-radius: 5px;
+  text-transform: capitalize;
+  background: #333;
+  color: #ffff;
+  border: none;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.contact .container .form-wrap form button:focus {
+  outline: none;
+}
+
+.contact .container .form-wrap form button:active {
+  background: #333;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact .container .form-wrap {
+    width: 50%;
+  }
+  .contact .container .map-wrap {
+    width: 50%;
+  }
+}
+
 footer {
   height: 4rem;
   background: #333;

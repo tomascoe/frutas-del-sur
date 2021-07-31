@@ -207,6 +207,62 @@ header {
     }
   }
 }
+// CONTACT
+.contact {
+  .container {
+    display: flex;
+    flex-direction: column;
+    .form-wrap {
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .form-group {
+          width: 90%;
+          input {
+            &:focus {
+              outline: #333;
+              border: #333;
+              box-shadow: 0 0 2px #333;
+            }
+          }
+          textarea {
+            resize: none;
+            &:focus {
+              outline: #333;
+              border: #333;
+              box-shadow: 0 0 2px #333;
+            }
+          }
+        }
+        button {
+          border-radius: 5px;
+          text-transform: capitalize;
+          background: #333;
+          color: #ffff;
+          border: none;
+          min-width: fit-content;
+          &:focus {
+            outline: none;
+          }
+          &:active {
+            background: #333;
+            outline: none;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      .form-wrap {
+        width: 50%;
+      }
+      .map-wrap {
+        width: 50%;
+      }
+    }
+  }
+}
 
 // FOOTER
 footer {
