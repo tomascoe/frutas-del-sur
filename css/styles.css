@@ -101,6 +101,18 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   background-size: cover;
 }
 
+@media screen and (min-width: 576px) {
+  .banner {
+    background-image: url(../assets/banner/banner-md.png);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    background-image: url(../assets/banner/banner-xl.jpg);
+  }
+}
+
 .banner .banner__fade {
   width: 100%;
   height: 100%;
@@ -129,18 +141,6 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
 .banner .banner__fade .banner__subtitle {
   text-transform: capitalize;
   text-align: center;
-}
-
-@media screen and (min-width: 576px) {
-  .banner {
-    background-image: url(../assets/banner/banner-md.png);
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .banner {
-    background-image: url(../assets/banner/banner-xl.jpg);
-  }
 }
 
 .services .wrapper {
