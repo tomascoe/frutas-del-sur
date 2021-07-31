@@ -133,13 +133,13 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
 
 @media screen and (min-width: 576px) {
   .banner {
-    background-image: url(../../assets/banner/banner-md.png);
+    background-image: url(../assets/banner/banner-md.png);
   }
 }
 
 @media screen and (min-width: 992px) {
   .banner {
-    background-image: url(../../assets/banner/banner-xl.jpg);
+    background-image: url(../assets/banner/banner-xl.jpg);
   }
 }
 
