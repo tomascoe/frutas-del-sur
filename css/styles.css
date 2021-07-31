@@ -263,6 +263,10 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   opacity: 1;
 }
 
+.contact {
+  margin-bottom: 3rem;
+}
+
 .contact .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,6 +275,10 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.contact .container .form-wrap {
+  margin-top: 2rem;
 }
 
 .contact .container .form-wrap form {
@@ -328,7 +336,58 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   outline: none;
 }
 
-@media screen and (min-width: 768px) {
+.contact .container .map-wrap {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .container .map-wrap .map-card {
+  margin-top: 1rem;
+}
+
+.contact .container .map-wrap .map-card iframe {
+  width: 250px;
+  height: 175px;
+}
+
+.contact .container .map-wrap .map-card .map-info h4 {
+  text-transform: uppercase;
+}
+
+.contact .container .map-wrap .map-card .map-info .map-info__txt img {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .contact .container .map-wrap .map-card {
+    width: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .container .map-wrap .map-card iframe {
+    width: 200px;
+    height: 150px;
+  }
+  .contact .container .map-wrap .map-card .map-info {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .contact .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -339,7 +398,31 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
     width: 50%;
   }
   .contact .container .map-wrap {
+    margin-top: 0;
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .container .map-wrap .map-card {
+    width: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+  }
+  .contact .container .map-wrap .map-card .map-info {
+    margin-left: 1rem;
   }
 }
 

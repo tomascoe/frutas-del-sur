@@ -209,10 +209,12 @@ header {
 }
 // CONTACT
 .contact {
+  margin-bottom: 3rem;
   .container {
     display: flex;
     flex-direction: column;
     .form-wrap {
+      margin-top: 2rem;
       form {
         display: flex;
         flex-direction: column;
@@ -252,13 +254,66 @@ header {
         }
       }
     }
-    @media screen and (min-width: 768px) {
+    .map-wrap {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .map-card {
+        margin-top: 1rem;
+        iframe {
+          width: 250px;
+          height: 175px;
+        }
+        .map-info {
+          h4 {
+            text-transform: uppercase;
+          }
+          .map-info__txt {
+            img {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 576px) {
+      .map-wrap {
+        .map-card {
+          width: 450px;
+          display: flex;
+          align-items: center;
+          iframe {
+            width: 200px;
+            height: 150px;
+          }
+          .map-info {
+            margin-top: 0;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 1000px) {
       flex-direction: row;
       .form-wrap {
         width: 50%;
       }
       .map-wrap {
+        margin-top: 0;
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .map-card {
+          width: 450px;
+          display: flex;
+          align-items: center;
+          margin-top: 0;
+          .map-info {
+            margin-left: 1rem;
+          }
+        }
       }
     }
   }
