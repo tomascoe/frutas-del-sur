@@ -1,3 +1,173 @@
+body {
+  background: #f2f2f2;
+}
+
+header .navbar .navbar-toggler {
+  border: none;
+}
+
+header .navbar .navbar-toggler:focus {
+  outline: none;
+}
+
+header .navbar .navbar-toggler-hamburger__outer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: none;
+}
+
+header .navbar .navbar-toggler-hamburger__outer .navbar-toggler-hamburger__inner {
+  width: 3rem;
+  height: 0.4rem;
+  background: #333;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px #333;
+          box-shadow: 0 2px 5px #333;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header .navbar .navbar-toggler-hamburger__outer .navbar-toggler-hamburger__inner::before, header .navbar .navbar-toggler-hamburger__outer .navbar-toggler-hamburger__inner::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 0.4rem;
+  background: #333;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px #333;
+          box-shadow: 0 2px 5px #333;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header .navbar .navbar-toggler-hamburger__outer .navbar-toggler-hamburger__inner::before {
+  -webkit-transform: translateY(-0.8rem);
+          transform: translateY(-0.8rem);
+  display: block;
+}
+
+header .navbar .navbar-toggler-hamburger__outer .navbar-toggler-hamburger__inner::after {
+  -webkit-transform: translateY(0.8rem);
+          transform: translateY(0.8rem);
+  display: block;
+}
+
+header .navbar [aria-expanded="true"] .navbar-toggler-hamburger__inner {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .navbar [aria-expanded="true"] .navbar-toggler-hamburger__inner::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+header .navbar [aria-expanded="true"] .navbar-toggler-hamburger__inner::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}
+
+header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.productos .container .product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productos .container .product-card .product-card__txt {
+  width: 70%;
+}
+
+.productos .container .product-card .product-card__txt h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.productos .container .product-card .product-card__txt .desc {
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+.productos .container .product-card .product-card__txt .origin {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+@media screen and (min-width: 768px) {
+  .productos .container .product-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .productos .container .product-card .product-card__txt {
+    width: 50%;
+  }
+  .productos .container .product-card .product-card__txt h3 {
+    text-align: left;
+  }
+  .productos .container .product-card .product-card__txt .desc {
+    text-align: left;
+  }
+  .productos .container .product-card .product-card__txt .origin {
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+}
+
+footer {
+  height: 10vh;
+  background: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .left {
+  width: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+footer .right {
+  width: 50%;
+  text-align: center;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -211,7 +381,7 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
 }
 
 .prod .wrapper {
-  width: 70%;
+  width: 85%;
   margin: auto;
 }
 
@@ -224,7 +394,6 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   margin: auto;
   display: block;
   height: auto;
-  width: 90%;
 }
 
 .prod .wrapper .card .overlay {

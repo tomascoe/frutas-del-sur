@@ -1,3 +1,4 @@
+@import "productos";
 html {
   scroll-behavior: smooth;
 }
@@ -163,7 +164,7 @@ header {
 .prod {
   display: block;
   .wrapper {
-    width: 70%;
+    width: 85%;
     margin: auto;
     .card {
       position: relative;
@@ -172,7 +173,6 @@ header {
         margin: auto;
         display: block;
         height: auto;
-        width: 90%;
       }
       .overlay {
         position: absolute;
