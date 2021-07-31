@@ -79,6 +79,11 @@ header {
       align-items: center;
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
+      .img {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+      }
       .product-card__txt {
         width: 70%;
         h3 {

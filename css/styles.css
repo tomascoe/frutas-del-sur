@@ -104,6 +104,16 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   margin-bottom: 1.5rem;
 }
 
+.productos .container .product-card .img {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .productos .container .product-card .product-card__txt {
   width: 70%;
 }
