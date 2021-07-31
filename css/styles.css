@@ -1,7 +1,4 @@
-body {
-  background: #f2f2f2;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap");
 header .navbar .navbar-toggler {
   border: none;
 }
@@ -88,6 +85,10 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   text-align: center;
 }
 
+.productos {
+  margin-top: 3rem;
+}
+
 .productos .container .product-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +100,8 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .productos .container .product-card .product-card__txt {
@@ -108,6 +111,7 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
 .productos .container .product-card .product-card__txt h3 {
   text-align: center;
   text-transform: uppercase;
+  font-size: 1.5em;
 }
 
 .productos .container .product-card .product-card__txt .desc {
@@ -160,7 +164,7 @@ footer {
 footer .left {
   width: 50%;
   text-align: center;
-  color: #fff;
+  color: #f2f2f2;
 }
 
 footer .right {
@@ -170,6 +174,11 @@ footer .right {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
 }
 
 .section__title {
@@ -539,7 +548,7 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
 
 @media screen and (min-width: 576px) {
   .contact .container .map-wrap .map-card {
-    width: 450px;
+    width: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -582,7 +591,7 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
             justify-content: center;
   }
   .contact .container .map-wrap .map-card {
-    width: 450px;
+    width: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -616,5 +625,30 @@ footer .left {
 footer .right {
   width: 50%;
   text-align: center;
+}
+
+.modal .modal-title {
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.modal a {
+  border-radius: 5px;
+  text-transform: capitalize;
+  background: #333;
+  color: #ffff;
+  border: none;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.modal a:focus {
+  outline: none;
+}
+
+.modal a:active {
+  background: #333;
+  outline: none;
 }
 /*# sourceMappingURL=styles.css.map */

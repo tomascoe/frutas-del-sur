@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap");
 @import "productos";
 html {
   scroll-behavior: smooth;
+}
+body {
+  background: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
 }
 .section__title {
   font-size: 2em;
@@ -281,7 +286,7 @@ header {
     @media screen and (min-width: 576px) {
       .map-wrap {
         .map-card {
-          width: 450px;
+          width: 480px;
           display: flex;
           align-items: center;
           iframe {
@@ -307,7 +312,7 @@ header {
         flex-direction: column;
         justify-content: center;
         .map-card {
-          width: 450px;
+          width: 480px;
           display: flex;
           align-items: center;
           margin-top: 0;
@@ -334,5 +339,27 @@ footer {
   .right {
     width: 50%;
     text-align: center;
+  }
+}
+// MODAL
+.modal {
+  .modal-title {
+    margin: auto;
+    text-transform: uppercase;
+  }
+  a {
+    border-radius: 5px;
+    text-transform: capitalize;
+    background: #333;
+    color: #ffff;
+    border: none;
+    min-width: fit-content;
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      background: #333;
+      outline: none;
+    }
   }
 }

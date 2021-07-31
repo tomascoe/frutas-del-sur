@@ -39,9 +39,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">contacto</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="assets/lang/en.svg" width="24" alt="English"></a>
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -89,7 +86,7 @@
             <!-- PRODUCT: GUACAMOLE -->
             <div class="card col-md-4">
                 <img class="card__img" src="assets/prod/guac.png" width="200" alt="Guacamole">
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#modalGuac">
                     <div class="overlay">
                         <img class="icon" src="assets/add.svg" width="80" alt="Ver Más">
                     </div>
@@ -99,7 +96,7 @@
             <!-- PRODUCT: PULP -->
             <div class="card col-md-4">
                 <img class="card__img" src="assets/prod/pulp.png" width="200" alt="Pulpa de Palta">
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#modalPulp">
                     <div class="overlay">
                         <img class="icon" src="assets/add.svg" width="80" alt="Ver Más">
                     </div>
@@ -109,7 +106,7 @@
             <!-- PRODUCT: IQF -->
             <div class="card col-md-4">
                 <img class="card__img" src="assets/prod/iqf.png" width="200" alt="Palta IQF">
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#modalIqf">
                     <div class="overlay">
                         <img class="icon" src="assets/add.svg" width="80" alt="Ver Más">
                     </div>
@@ -138,7 +135,7 @@
                     <div class="form-group">
                         <textarea class="form-control" placeholder="Escriba su mensaje aquí..." id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">Enviar</button>
                 </form>
             </div>
             <div class="map-wrap">
@@ -175,6 +172,78 @@
             <a href="https://www.linkedin.com/company/sweet-fresh-mx" target="_blank"><img class="footer-social mx-1" src="assets/social/linkedin.svg" width="24" alt="LinkedIn"></a>
         </div>
     </footer>
+    <!-- MODAL -->
+    <!-- PRODUCTS -->
+    <!-- GUACAMOLE -->
+    <div class="modal fade" id="modalGuac" tabindex="-1" aria-labelledby="modalGuac" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalGuac">guacamole</h5>
+            </div>
+            <div class="modal-body text-center">
+              Guacamole de origen Mexicano marca Buena Vida.
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary" href="pages/productos.html#guac" role="button">Ver mas</a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- PULP -->
+    <div class="modal fade" id="modalPulp" tabindex="-1" aria-labelledby="modalPulp" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalPulp">pulpa de aguacate</h5>
+            </div>
+            <div class="modal-body text-center">
+              pulpa de aguacate de origen Mexicano marca Buena Vida.
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary" href="pages/productos.html#pulp" role="button">Ver mas</a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- IQF -->
+    <div class="modal fade" id="modalIqf" tabindex="-1" aria-labelledby="modalIqf" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalIqf">aguacate IQF</h5>
+            </div>
+            <div class="modal-body text-center">
+              Aguacate IQF de origen Mexicano marca Buena Vida.
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary" href="pages/productos.html#iqf" role="button">Ver mas</a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- FORM -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="formModal">Mensaje Enviado</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Nos estaremos comunicando apenas posible.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
     <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
