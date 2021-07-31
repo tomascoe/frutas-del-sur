@@ -613,6 +613,9 @@ header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
   .contact .container .map-wrap .map-card .map-info {
     margin-left: 1rem;
   }
+  .contact .container .map-wrap .map-card .map-info h4 {
+    font-size: 1.3em;
+  }
 }
 
 footer {
