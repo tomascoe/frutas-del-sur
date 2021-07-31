@@ -347,7 +347,10 @@ footer {
     margin: auto;
     text-transform: uppercase;
   }
-  a {
+  .btn,
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
     border-radius: 5px;
     text-transform: capitalize;
     background: #333;
@@ -356,6 +359,7 @@ footer {
     min-width: fit-content;
     &:focus {
       outline: none;
+      background: #333;
     }
     &:active {
       background: #333;

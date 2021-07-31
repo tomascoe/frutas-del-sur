@@ -632,7 +632,10 @@ footer .right {
   text-transform: uppercase;
 }
 
-.modal a {
+.modal .btn,
+.modal .btn-primary:not(:disabled):not(.disabled).active,
+.modal .btn-primary:not(:disabled):not(.disabled):active,
+.modal .show > .btn-primary.dropdown-toggle {
   border-radius: 5px;
   text-transform: capitalize;
   background: #333;
@@ -643,11 +646,18 @@ footer .right {
   min-width: fit-content;
 }
 
-.modal a:focus {
+.modal .btn:focus,
+.modal .btn-primary:not(:disabled):not(.disabled).active:focus,
+.modal .btn-primary:not(:disabled):not(.disabled):active:focus,
+.modal .show > .btn-primary.dropdown-toggle:focus {
   outline: none;
+  background: #333;
 }
 
-.modal a:active {
+.modal .btn:active,
+.modal .btn-primary:not(:disabled):not(.disabled).active:active,
+.modal .btn-primary:not(:disabled):not(.disabled):active:active,
+.modal .show > .btn-primary.dropdown-toggle:active {
   background: #333;
   outline: none;
 }
